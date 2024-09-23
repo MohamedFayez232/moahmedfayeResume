@@ -10,8 +10,20 @@
             margin: 20px;
             line-height: 1.6;
         }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .left {
+            width: 70%;
+        }
+        .right {
+            width: 25%;
+            text-align: right;
+        }
         h1 {
-            text-align: center;
+            text-align: left;
         }
         .section {
             margin-bottom: 20px;
@@ -25,11 +37,8 @@
             list-style-type: none;
             padding: 0;
         }
-        .contact-info p {
-            margin: 0;
-        }
-        .profile-pic {
-            text-align: center;
+        .contact-info {
+            text-align: left;
             margin-bottom: 20px;
         }
         .profile-pic img {
@@ -37,61 +46,107 @@
             width: 150px;
             height: 150px;
         }
+        .work-experience ul, .internships ul {
+            padding: 0;
+        }
+        .work-experience li, .internships li {
+            margin-bottom: 10px;
+        }
+        .work-experience .date, .internships .date {
+            float: right;
+            font-style: italic;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
     </style>
 </head>
 <body>
-    <div class="profile-pic">
-        <img src="https://drive.google.com/file/d/100fEf_rfFKwsAsgzQUuk4h2bS32AS9fs/view?usp=sharing.jpg" alt="Profile Picture">
-    </div>
+    <div class="container">
+        <div class="left">
+            <h1>MOHAMED FAYEZ ABU ALHASSAN</h1>
+            <div class="contact-info">
+                <p><strong>Address:</strong> Qena, Egypt</p>
+                <p><strong>Phone:</strong> 01114493537 - 01558950569</p>
+                <p><strong>Military status:</strong> Exempted</p>
+                <p><strong>Email:</strong> <a href="mailto:maohammedfayez92@gmail.com">maohammedfayez92@gmail.com</a></p>
+            </div>
 
-    <h1>MOHAMED FAYEZ ABU ALHASSAN</h1>
+            <div class="section">
+                <h2>Objective</h2>
+                <p>Aspiring for a challenging position in Customer Service, sales, or teller where I can leverage my 3+ years of experience in banking and finance to contribute effectively to the growth and success of the organization.</p>
+            </div>
 
-    <div class="contact-info">
-        <p><strong>Address:</strong> Qena, Egypt</p>
-        <p><strong>Phone:</strong> 01114493537 - 01558950569</p>
-        <p><strong>Military status:</strong> Exempted</p>
-        <p><strong>Email:</strong> <a href="mailto:maohammedfayez92@gmail.com">maohammedfayez92@gmail.com</a></p>
-    </div>
+            <div class="section">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Bachelor of Commerce (English section), South Valley University (2021)</strong></li>
+                    <li>Major: Accounting</li>
+                    <li>Grade: Good</li>
+                </ul>
+            </div>
 
-    <div class="section">
-        <h2>Objective</h2>
-        <p>Aspiring for a challenging position in Customer Service, sales, or teller where I can leverage my 3+ years 
-            of experience in banking and finance to contribute effectively to the growth and success of the organization.</p>
-    </div>
+            <div class="section work-experience">
+                <h2>Work Experience</h2>
+                <ul>
+                    <li class="clearfix"><span class="date">09/2024 – Present</span><strong>Contracts and Sales Officer</strong>
+                        <ul>
+                            <li>Managed client contracts, ensuring compliance with life insurance policies and regulations.</li>
+                            <li>Provided personalized insurance consultations, tailoring plans to individual client needs.</li>
+                        </ul>
+                    </li>
+                    <li class="clearfix"><span class="date">02/2023 – 05/2024</span><strong>Customer Service at QNB Alahli Bank</strong>
+                        <ul>
+                            <li>Reviewing account statements and other financial documents to ensure accuracy of entries.</li>
+                            <li>Providing information about bank products and services to potential clients.</li>
+                        </ul>
+                    </li>
+                    <li class="clearfix"><span class="date">09/2022 – 01/2023</span><strong>Customer Service and Sales at Etisalat Egypt</strong>
+                        <ul>
+                            <li>Answering questions about company’s products or services.</li>
+                            <li>Processing client orders and transactions.</li>
+                        </ul>
+                    </li>
+                    <li class="clearfix"><span class="date">08/2021 – 08/2022</span><strong>Account Receivable at Palacio of Hurghada</strong>
+                        <ul>
+                            <li>Perform account reconciliations.</li>
+                            <li>Process credit card payments and assist with month-end closing.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
-    <div class="section">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Bachelor of Commerce (English section), South Valley University (2021)</strong></li>
-            <li>Major: Accounting</li>
-            <li>Grade: Good</li>
-        </ul>
-    </div>
+            <div class="section internships">
+                <h2>Internships</h2>
+                <ul>
+                    <li class="clearfix"><span class="date">2020</span><strong>Trainee, Banque Misr</strong>
+                        <ul>
+                            <li>Gained foundational experience in banking operations.</li>
+                        </ul>
+                    </li>
+                    <li class="clearfix"><span class="date">2021</span><strong>Trainee, CIB Bank</strong>
+                        <ul>
+                            <li>Developed skills in financial services and customer interaction.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
-    <div class="section">
-        <h2>Work Experience</h2>
-        <ul>
-            <li><strong>Contracts and Sales Officer - 09/2024 – Present</strong></li>
-            <ul>
-                <li>Managed client contracts, ensuring compliance with life insurance policies and regulations.</li>
-                <li>Provided personalized insurance consultations, tailoring plans to individual client needs.</li>
-            </ul>
-            <li><strong>Customer Service at QNB Alahli Bank - 02/2023 – 05/2024</strong></li>
-            <ul>
-                <li>Reviewing account statements and other financial documents to ensure accuracy of entries.</li>
-                <li>Providing information about bank products and services to potential clients.</li>
-            </ul>
-            <!-- Add the remaining job experiences in the same pattern -->
-        </ul>
-    </div>
+            <div class="section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Excellent communication skills</li>
+                    <li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
+                    <li>Fluent in English</li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Excellent communication skills</li>
-            <li>Proficient in Microsoft Office (Word, Excel, PowerPoint)</li>
-            <li>Fluent in English</li>
-        </ul>
+        <div class="right profile-pic">
+            <img src="your-photo-url.jpg" alt="Profile Picture">
+        </div>
     </div>
 </body>
 </html>
